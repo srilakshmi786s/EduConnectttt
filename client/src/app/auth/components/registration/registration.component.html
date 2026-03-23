@@ -52,8 +52,10 @@
             <input type="text" id="contactNumber" formControlName="contactNumber" />
             <div *ngIf="registrationForm.controls['contactNumber'].invalid && registrationForm.controls['contactNumber'].touched"
                 class="error">
-                Contact number must be 10 digits.
+                <small *ngIf="registrationForm.get('contactNumber')?.hasError('required')">Contact number is required.</small>
+                <small *ngIf="registrationForm.get('contactNumber')?.hasError('pattern')">Contact number must be 10 digits.</small>
             </div>
+            
         </div>
 
         <div>

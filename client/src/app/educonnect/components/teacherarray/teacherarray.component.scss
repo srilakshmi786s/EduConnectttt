@@ -6,26 +6,26 @@
     h2 {
         text-align: center;
         margin-bottom: 16px;
-        color: #333;
+        color: #1e3a8a;
     }
 
     .no-teachers {
         text-align: center;
-        color: red;
+        color: #dc2626;
         font-weight: bold;
     }
 
     .teacher-card {
-        border: 1px solid #ddd;
+        border: 1px solid #c7d2fe;
         border-radius: 8px;
         padding: 16px;
         margin-bottom: 12px;
-        background-color: #f9f9f9;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #f8faff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 
         h3 {
             margin-top: 0;
-            color: #007bff;
+            color: #1e3a8a;
         }
 
         p {

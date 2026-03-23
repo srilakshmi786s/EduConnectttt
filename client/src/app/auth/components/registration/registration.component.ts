@@ -23,7 +23,7 @@ export class RegistrationComponent {
             password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*\d).+$/)]],
             role: ['', [Validators.required]],
             fullName: ['', Validators.required],
-            contactNumber: ['', Validators.required],
+            contactNumber: ['', [Validators.required,Validators.pattern(/^\d{10}$/)]],
             subject: [''], // Teacher-specific field
             yearsOfExperience: [null], // Teacher-specific field
             dateOfBirth: [null], // Student-specific field

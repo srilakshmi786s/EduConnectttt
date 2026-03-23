@@ -3,103 +3,106 @@
     margin: 30px auto;
     padding: 20px;
     background-color: #ffffff;
-    border: 1px solid #ddd;
+    border: 1px solid #c7d2fe;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
     h2 {
-      text-align: center;
-      font-size: 2rem;
-      color: #333;
-      margin-bottom: 20px;
+        text-align: center;
+        font-size: 2rem;
+        color: #1e3a8a;
+        margin-bottom: 20px;
     }
-  
+
     form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-  
-      .form-group {
         display: flex;
         flex-direction: column;
-  
-        label {
-          font-size: 1rem;
-          font-weight: bold;
-          margin-bottom: 5px;
-          color: #555;
+        gap: 15px;
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 1rem;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #1e3a8a;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            textarea {
+                padding: 10px 12px;
+                font-size: 1rem;
+                border: 1px solid #c7d2fe;
+                border-radius: 6px;
+                outline: none;
+                background-color: #f8faff;
+                color: #333;
+                transition: border-color 0.2s;
+
+                &:focus {
+                    border-color: #3b82f6;
+                    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+                }
+            }
+
+            .error {
+                color: #dc2626;
+                font-size: 0.875rem;
+                margin-top: 5px;
+            }
         }
-  
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        textarea {
-          padding: 10px;
-          font-size: 1rem;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          outline: none;
-          transition: border-color 0.2s;
-  
-          &:focus {
-            border-color: #4caf50;
-          }
+
+        .form-actions {
+            display: flex;
+            justify-content: center;
+
+            button[type="submit"] {
+                background-color: #1e3a8a;
+                color: #ffffff;
+                border: none;
+                border-radius: 6px;
+                padding: 10px 20px;
+                font-size: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #1e40af;
+                }
+
+                &:disabled {
+                    background-color: #ccc;
+                    cursor: not-allowed;
+                }
+            }
         }
-  
-        .error {
-          color: #d32f2f;
-          font-size: 0.875rem;
-          margin-top: 5px;
+
+        .form-footer {
+            text-align: center;
+            margin: 20px;
+            font-size: 16px;
+            color: #1e3a8a;
         }
-      }
-  
-      .form-actions {
-        display: flex;
-        justify-content: center;
-  
-        button[type="submit"] {
-          background-color: #4caf50;
-          color: #ffffff;
-          border: none;
-          border-radius: 5px;
-          padding: 10px 20px;
-          font-size: 1rem;
-          font-weight: bold;
-          cursor: pointer;
-          transition: background-color 0.3s;
-  
-          &:hover {
-            background-color: #45a049;
-          }
-  
-          &:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-          }
-        }
-      }
-      .form-footer {
-        text-align: center;
-        margin: 20px;
-        font-size: 16px;
-        color: #333;
-      }
     }
-  
+
     .success-message {
-      text-align: center;
-      color: #4caf50;
-      font-size: 1rem;
-      font-weight: bold;
-      margin-top: 20px;
+        text-align: center;
+        color: #155724;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 20px;
     }
-  
+
     .error-message {
-      text-align: center;
-      color: #d32f2f;
-      font-size: 1rem;
-      font-weight: bold;
-      margin-top: 20px;
+        text-align: center;
+        color: #dc2626;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 20px;
     }
-  }
-  
+}

@@ -4,25 +4,25 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #eef2ff;
     padding: 20px;
 
     form {
         max-width: 400px;
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        padding: 30px;
+        border: 1px solid #c7d2fe;
+        border-radius: 8px;
         background-color: #fff;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
 
         h2 {
             text-align: center;
             margin-bottom: 20px;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
-            color: #333;
+            color: #1e3a8a;
         }
 
         div {
@@ -32,9 +32,9 @@
 
             label {
                 margin-bottom: 5px;
-                font-weight: bold;
+                font-weight: 600;
                 font-size: 14px;
-                color: #333;
+                color: #1e3a8a;
             }
 
             input[type='text'],
@@ -45,23 +45,25 @@
             textarea,
             select {
                 width: 100%;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
+                padding: 10px 12px;
+                border: 1px solid #c7d2fe;
+                border-radius: 6px;
                 font-size: 14px;
                 box-sizing: border-box;
+                background-color: #f8faff;
+                color: #333;
 
                 &:focus {
-                    border-color: #007bff;
+                    border-color: #3b82f6;
                     outline: none;
-                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+                    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
                 }
             }
 
             .error {
                 margin-top: 5px;
                 font-size: 12px;
-                color: red;
+                color: #dc2626;
                 text-align: left;
 
                 small {
@@ -73,18 +75,18 @@
         button[type='submit'] {
             display: block;
             width: 100%;
-            padding: 12px;
+            padding: 11px;
             margin-top: 10px;
             border: none;
-            border-radius: 5px;
-            background-color: #4caf50;
+            border-radius: 6px;
+            background-color: #1e3a8a;
             color: #fff;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             cursor: pointer;
 
             &:hover {
-                background-color: #45a049;
+                background-color: #1e40af;
             }
         }
 
@@ -93,6 +95,10 @@
             background-color: #d4edda;
             border: 1px solid #c3e6cb;
             text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
         }
 
         .error-message {
@@ -100,13 +106,17 @@
             background-color: #f8d7da;
             border: 1px solid #f5c6cb;
             text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
         }
 
         .form-footer {
             text-align: center;
-            margin: 20px;
-            font-size: 16px;
-            color: #333;
+            margin: 20px 0 0;
+            font-size: 14px;
+            color: #1e3a8a;
         }
     }
 }

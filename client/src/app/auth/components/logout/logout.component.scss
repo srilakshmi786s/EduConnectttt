@@ -5,18 +5,16 @@
 }
 
 .logout-button {
-    background-color: #e74c3c;
-    /* Red background for the button */
+    background-color: #1e3a8a;
     border: none;
     color: white;
     padding: 8px 16px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .logout-button:hover {
-    background-color: #c0392b;
-    /* Darker red on hover */
+    background-color: #1e40af;
 }
